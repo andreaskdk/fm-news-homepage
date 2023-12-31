@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <style>
+  @font-face {
+  font-family: inter;
+  src: url('assets/fonts/static/Inter-Regular.ttf') format('truetype')
+  }
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            softorange: 'hsl(35, 77%, 62%)',
+            softred: 'hsl(5, 85%, 63%)',
+            offwhite: 'hsl(36, 100%, 99%)',
+            grayishblue: 'hsl(233, 8%, 79%)',
+            darkgrayishblue: 'hsl(236, 13%, 42%)',
+            verydarkblue: 'hsl(240, 100%, 5%)'
+          },
+          fontFamily: {
+            inter: ['Inter', 'sans-serif']
+          },
+          letterSpacing: {
+
+            widest: '.25em',
+          }
+        }
+      }
+    }
+  </script>
+  <title>Frontend Mentor | News homepage</title>
+
+</head>
+<body>
+<nav class="flex p-5">
+  <div class="">
+    <img class="h-8 w-16" src="assets/images/logo.svg" />
+  </div>
+  <div class="w-full grid grid-cols-1 grid-rows-1 ">
+    <div class="sm:invisible col-start-1 row-start-1 flex justify-end p-3"  >
+        <img id="menuopenicon" class="h-4 w-10" src="assets/images/icon-menu.svg" />
+    </div>
+    <div class="invisible sm:visible col-start-1 row-start-1 flex justify-end">
+      <div class="">
+        <a href="#responsive-header" class="">
+          Home
+        </a>
+        <a href="#responsive-header" class="">
+          New
+        </a>
+        <a href="#responsive-header" class="">
+          Popular
+        </a>
+        <a href="#responsive-header" class="">
+          Trending
+        </a>
+        <a href="#responsive-header" class="">
+          Categories
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<dialog id="menumodal" class="mt-0 mr-0 h-full ml-auto w-48">
+  <div class="grid gap-2 p-3">
+    <div class="flex justify-end m-3">
+      <img id="menucloseicon" class="w-54" src="assets/images/icon-menu-close.svg" />
+    </div>
+    <div>Home</div>
+    <div>New</div>
+    <div>Popular</div>
+    <div>Trending</div>
+    <div>Categories</div>
+
+  </div>
+</dialog>
+
+<div class="p-1">
+  <div class="p-2">
+    <img src="assets/images/image-web-3-mobile.jpg"/>
+  </div >
+  <h1 class="font-inter text-4xl font-extrabold p-2" >The Bright Future of Web 3.0?</h1>
+  <p class="font-inter text-normal font-regular p-2 text-xs leading-6">
+    We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+    But is it really fulfilling its promise?
+  </p>
+  <div class="bg-softred uppercase text-white font-bold ml-4 w-40 h-12 flex content-center justify-center ">
+    <div class="m-auto tracking-widest text-sm">Read more</div>
+  </div>
+
+  <div class="grid grid-rows-6 bg-black text-white m-2 py-6">
+    <div class="text-softorange text-3xl font-extrabold mx-4 ">New</div>
+    <div class="px-4 text-sm ">
+      <h2 class="text-base font-extrabold mb-2 ">Hydrogen VS Electric Cars</h2>
+      <p class="text-grayishblue">Will hydrogen-fueled cars ever catch up to EVs?</p>
+    </div>
+    <hr class="h-px mx-4 mt-6 mb-0 bg-darkgrayishblue border-0 ">
+    <div class="px-4 text-sm "><h2 class="text-base font-extrabold mb-2 ">The Downsides of AI Artistry</h2>
+      <p class="text-grayishblue">What are the possible adverse effects of on-demand AI image generation?
+      </p>
+    </div>
+    <hr class="h-px mx-4 mt-6 mb-0 bg-darkgrayishblue border-0 ">
+    <div class="px-4 text-sm "><h2 class="text-base font-extrabold mb-2 ">Is VC Funding Drying Up?</h2>
+      <p class="text-grayishblue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+    </div>
+  </div>
+
+  <div class="grid grid-rows-3 m-2">
+    <div class="grid grid-cols-3 my-4">
+      <img src="assets/images/image-retro-pcs.jpg"/>
+      <div class="col-span-2 p-2">
+        <div class="text-3xl text-grayishblue font-extrabold ">01</div>
+        <h2 class="font-extrabold my-4">Reviving Retro PCs</h2>
+        <div class="text-sm ">What happens when old PCs are given modern upgrades?</div>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-3 my-4">
+      <img src="assets/images/image-top-laptops.jpg"/>
+      <div class="col-span-2 p-2">
+        <div class="text-3xl text-grayishblue font-extrabold ">02</div>
+        <h2 class="font-extrabold my-4">Top 10 Laptops of 2022</h2>
+        <div class="text-sm ">Our best picks for various needs and budgets.</div>
+      </div>
+    </div>
+    <div class="grid grid-cols-3 my-4">
+      <img src="assets/images/image-gaming-growth.jpg"/>
+      <div class="col-span-2 p-2">
+        <div class="text-3xl text-grayishblue font-extrabold ">03</div>
+        <h2 class="font-extrabold my-4">The Growth of Gaming</h2>
+        <div class="text-sm ">How the pandemic has sparked fresh opportunities.</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+
+  const menucloseicon = document.getElementById('menucloseicon');
+  menucloseicon.addEventListener('click', function() {
+    const dialog = document.getElementById('menumodal');
+    dialog.close();
+  });
+
+  const menuopenicon = document.getElementById('menuopenicon');
+    menuopenicon.addEventListener('click', function() {
+        const dialog = document.getElementById('menumodal');
+        dialog.showModal();
+    });
+
+  window.onload = function() {
+    const dialog = document.querySelector('dialog');
+    //dialog.showModal();
+  }
+
+</script>
+<style>
+  dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+</style>
+
+
+
+<style>
+  .attribution { font-size: 11px; text-align: center; }
+  .attribution a { color: hsl(228, 45%, 44%); }
+</style>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+</body>
+</html>
