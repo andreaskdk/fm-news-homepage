@@ -49,19 +49,19 @@
     </div>
     <div class="invisible sm:visible col-start-1 row-start-1 flex justify-end">
       <div class="">
-        <a href="#responsive-header" class="">
+        <a class="px-2">
           Home
         </a>
-        <a href="#responsive-header" class="">
+        <a class="px-2">
           New
         </a>
-        <a href="#responsive-header" class="">
+        <a class="px-2">
           Popular
         </a>
-        <a href="#responsive-header" class="">
+        <a class="px-2">
           Trending
         </a>
-        <a href="#responsive-header" class="">
+        <a class="px-2">
           Categories
         </a>
       </div>
@@ -84,16 +84,24 @@
 </dialog>
 
 <div class="p-1">
-  <div class="p-2">
-    <img src="assets/images/image-web-3-mobile.jpg"/>
-  </div >
-  <h1 class="font-inter text-4xl font-extrabold p-2" >The Bright Future of Web 3.0?</h1>
-  <p class="font-inter text-normal font-regular p-2 text-xs leading-6">
-    We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
-    But is it really fulfilling its promise?
-  </p>
-  <div class="bg-softred uppercase text-white font-bold ml-4 w-40 h-12 flex content-center justify-center ">
-    <div class="m-auto tracking-widest text-sm">Read more</div>
+  <div class="sm:grid sm:grid-cols-3">
+  <div class="sm:col-span-2">
+    <div class="p-2">
+      <img class="sm:invisible h-auto sm:h-0" src="assets/images/image-web-3-mobile.jpg"/>
+      <img class="sm:visible invisible h-0 sm:h-auto" src="assets/images/image-web-3-desktop.jpg"/>
+    </div >
+    <div class="sm:grid sm:grid-cols-2">
+      <h1 class="font-inter text-4xl font-extrabold p-2" >The Bright Future of Web 3.0?</h1>
+      <div>
+      <p class="font-inter text-normal font-regular p-2 text-xs leading-6">
+        We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people.
+        But is it really fulfilling its promise?
+      </p>
+      <div class="bg-softred uppercase text-white font-bold ml-4 w-40 h-12 flex content-center justify-center ">
+        <div class="m-auto tracking-widest text-sm">Read more</div>
+      </div>
+      </div>
+    </div>
   </div>
 
   <div class="grid grid-rows-6 bg-black text-white m-2 py-6">
@@ -112,10 +120,11 @@
       <p class="text-grayishblue">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
     </div>
   </div>
+  </div>
 
-  <div class="grid grid-rows-3 m-2">
+  <div class="grid grid-rows-3 sm:grid-cols-3 sm:grid-rows-1 m-2">
     <div class="grid grid-cols-3 my-4">
-      <img src="assets/images/image-retro-pcs.jpg"/>
+      <img class="h-full" src="assets/images/image-retro-pcs.jpg"/>
       <div class="col-span-2 p-2">
         <div class="text-3xl text-grayishblue font-extrabold ">01</div>
         <h2 class="font-extrabold my-4">Reviving Retro PCs</h2>
@@ -124,7 +133,7 @@
     </div>
 
     <div class="grid grid-cols-3 my-4">
-      <img src="assets/images/image-top-laptops.jpg"/>
+      <img class="h-full" src="assets/images/image-top-laptops.jpg"/>
       <div class="col-span-2 p-2">
         <div class="text-3xl text-grayishblue font-extrabold ">02</div>
         <h2 class="font-extrabold my-4">Top 10 Laptops of 2022</h2>
@@ -132,7 +141,7 @@
       </div>
     </div>
     <div class="grid grid-cols-3 my-4">
-      <img src="assets/images/image-gaming-growth.jpg"/>
+      <img class="h-full" src="assets/images/image-gaming-growth.jpg"/>
       <div class="col-span-2 p-2">
         <div class="text-3xl text-grayishblue font-extrabold ">03</div>
         <h2 class="font-extrabold my-4">The Growth of Gaming</h2>
@@ -177,8 +186,8 @@
 </style>
 
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Andreas Koch</a>.
   </div>
 
 </body>
